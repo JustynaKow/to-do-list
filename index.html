@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,25 +17,29 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
         rel="stylesheet">
 </head>
+
 <body class="body">
     <div class="container">
-        <h1>Lista zadań</h1>
-        <div class="section">
+        <header>
+            <h1>Lista zadań</h1>
+        </header>
+        <section class="section">
             <h2 class="section__title">Dodaj nowe zadanie</h2>
-            <div class="section__element">
+            <div class="section__body">
                 <form class="form js-form">
                     <input placeholder="Co jest do zrobienia?" class="form__field js-newTask">
                     <button class="form__button">Dodaj zadanie</button>
                 </form>
             </div>
-        </div>
-        <div class="section">
+        </section>
+        <section class="section">
             <h2 class="section__title">Lista zadań</h2>
-            <div class="section__element">
-                <ul class="js-tasks">
+            <div class="section__body">
+                <ul class="list js-tasks">
                 </ul>
             </div>
-        </div>
+        </section>
     </div>
 </body>
+
 </html>
