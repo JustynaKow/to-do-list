@@ -33,7 +33,7 @@
     background-color: hsl(120, 61%, 39%);
 }
 
-.tasks__button-toggleDone:active {
+.tasks__button--toggleDone:active {
     background-color: hsl(120, 61%, 44%);
 }
 
