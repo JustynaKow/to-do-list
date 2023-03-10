@@ -40,7 +40,7 @@
             toggleDoneButtons.addEventListener("click", () => {
                 toggleTaskDone(index);
             });
-        });    
+        });
     };
 
     const render = () => {
