@@ -25,3 +25,7 @@
 .form__button:hover {
     background-color: #4daca6;
 }
+
+.form__button:active {
+    background-color: #389c96;
+}
