@@ -13,3 +13,7 @@ html {
     background-color: #ddd;
     word-break: break-word;
 }
+
+.button {
+    cursor: pointer;
+}
