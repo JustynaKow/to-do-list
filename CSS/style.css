@@ -10,10 +10,14 @@ html {
 
 .body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ddd;
+    background-color: #eee;
     word-break: break-word;
 }
 
 .button {
     cursor: pointer;
+}
+
+.button:disabled {
+    cursor: not-allowed;
 }

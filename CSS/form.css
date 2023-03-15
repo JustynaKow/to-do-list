@@ -12,7 +12,7 @@
 
 .form__field {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
 }
 
 .form__button {
@@ -20,10 +20,12 @@
     color: #ffffff;
     border: none;
     padding: 10px;
+    transition: 0.5s linear;
 }
 
 .form__button:hover {
     background-color: #4daca6;
+    transform: scale(1.1);
 }
 
 .form__button:active {
