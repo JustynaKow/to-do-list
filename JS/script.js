@@ -19,6 +19,7 @@
             ...tasks,
             {content: newTaskContent},
            ];
+
         render();
     };
 
@@ -31,7 +32,7 @@
             },
             ...tasks.slice(taskIndex+1),
         ];
-        
+
         render();
     };
 
@@ -55,7 +56,7 @@
         });
     };
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -77,9 +78,28 @@
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
 
-        bindRemoveEvents();
-        bindToggleDoneButtons();
+    const renderButtons = () => {
+        const buttonsElement = document.querySelector(".js-buttons");
+
+        if (!tasks.length) {
+            buttonsElement.innerHTML = "";
+            return;
+        };
+
+        buttonsElement.innerHTML = `
+            <button class="button buttons__button">Ukryj ukończone</button>
+            <button class="button buttons__button">Ukończ wszystkie</button>
+        `
+    };
+
+    const render = () => {
+       renderTasks();
+       renderButtons();
+
+       bindRemoveEvents();
+       bindToggleDoneButtons();
     };
 
     const onFormSubmit = (event) => {
