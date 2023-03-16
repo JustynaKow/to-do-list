@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="CSS/form.css">
     <link rel="stylesheet" href="CSS/tasks.css">
     <link rel="stylesheet" href="CSS/container.css">
+    <link rel="stylesheet" href="CSS/buttons.css">
     <script defer src="JS/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -22,13 +24,16 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
         rel="stylesheet">
 </head>
+
 <body class="body">
     <div class="container">
         <header>
             <h1>Lista zadań</h1>
         </header>
         <section class="section">
-            <h2 class="section__title">Dodaj nowe zadanie</h2>
+            <header class="section__header">
+                <h2 class="section__title">Dodaj nowe zadanie</h2>
+            </header>
             <div class="section__body">
                 <form class="form js-form">
                     <input placeholder="Co jest do zrobienia?" class="form__field js-newTask">
@@ -37,7 +42,10 @@
             </div>
         </section>
         <section class="section">
-            <h2 class="section__title">Lista zadań</h2>
+            <header class="section__header">
+                <h2 class="section__title">Lista zadań</h2>
+                <div class="buttons js-buttons"></div>
+            </header>
             <div class="section__body">
                 <ul class="tasks js-tasks">
                 </ul>
@@ -45,4 +53,5 @@
         </section>
     </div>
 </body>
+
 </html>
