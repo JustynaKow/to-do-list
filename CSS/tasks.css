@@ -13,6 +13,10 @@
     border-bottom: 1px solid #eee;
 }
 
+.tasks__item--hidden {
+    display: none;
+}
+
 .tasks__content--done {
     text-decoration: line-through;
 }
@@ -23,6 +27,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
+    transition: background-color 0.3s;
 }
 
 .tasks__button--toggleDone {
