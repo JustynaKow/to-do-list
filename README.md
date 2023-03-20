@@ -11,3 +11,4 @@ Simple to-do-list.
 - BEM
 - ES6 + features
 - GRID
+- FLEX
